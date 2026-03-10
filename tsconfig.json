@@ -1,0 +1,15 @@
+{
+  "include": ["index.ts"],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "outDir": "esm/",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "stripInternal": true,
+    "isolatedModules": true
+  },
+  "exclude": ["esm", "cjs"]
+}

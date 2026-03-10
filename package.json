@@ -1,0 +1,53 @@
+{
+  "name": "json-float",
+  "version": "0.0.0",
+  "description": "Represent any floating point value as JSON",
+  "type": "module",
+  "author": "Dolan Murvihill (https://github.com/dmurvihill)",
+  "license": "MIT",
+  "main": "esm/index.js",
+  "exports": {
+    "import": "esm/index.js",
+    "require": "cjs/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmurvihill/json-float"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "esm/*",
+    "cjs/*"
+  ],
+  "keywords": [
+    "float",
+    "double",
+    "ieee754",
+    "json"
+  ],
+  "scripts": {
+    "format": "prettier --write --list-different .",
+    "lint": "eslint --fix .",
+    "test": "tsx test.ts",
+    "build": "tsc && tsc --project tsconfig.cjs.json",
+    "pre-commit": "prettier --check . && eslint --max-warnings=0 && npm test && npm run build",
+    "release": "npx release-it --increment $(npx git-conventional-commits version)",
+    "git-conventional-commits": "^2.7.1"
+  },
+  "devDependencies": {
+    "@release-it/keep-a-changelog": "^7.0.1",
+    "@types/node": "^25.4.0",
+    "eslint": "^10.0.3",
+    "fast-check": "^4.6.0",
+    "git-conventional-commits": "^2.7.1",
+    "prettier": "^3.8.1",
+    "release-it": "^19.2.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1",
+    "zod": "^4.3.6"
+  },
+  "engines": {
+    "node": "^18 || ^20 || ^22 || ^24 || ^25"
+  }
+}

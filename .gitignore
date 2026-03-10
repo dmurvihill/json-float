@@ -1,0 +1,5 @@
+node_modules/
+esm/
+cjs/
+json-float-*.tgz
+package-lock.json
