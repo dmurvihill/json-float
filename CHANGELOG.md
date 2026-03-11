@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-03-10
+
 ### Added
 
 - `replaceFloat` and `reviveFloat` functions
@@ -15,3 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `README.md`
 - `CHANGELOG.md`
 - `LICENSE.txt` (MIT license)
+
+[Unreleased]: https://github.com/dmurvihill/json-float/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/dmurvihill/json-float/releases/tag/1.0.0
