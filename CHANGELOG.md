@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed bundling error that prevented importing the CJS package (`.js`
+  and related file extensions changed to `.cjs`).
+
 ## [1.0.0] - 2026-03-10
 
 ### Added

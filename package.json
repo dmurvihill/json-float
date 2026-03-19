@@ -7,8 +7,16 @@
   "license": "MIT",
   "main": "esm/index.js",
   "exports": {
-    "import": "esm/index.js",
-    "require": "cjs/index.js"
+    ".": {
+      "import": {
+        "default": "./esm/index.js",
+        "types": "./esm/index.d.ts"
+      },
+      "require": {
+        "default": "./cjs/index.cjs",
+        "types": "./cjs/index.d.cts"
+      }
+    }
   },
   "repository": {
     "type": "git",
@@ -29,10 +37,9 @@
     "format": "prettier --write --list-different .",
     "lint": "eslint --fix .",
     "test": "tsx test.ts",
-    "build": "tsc && tsc --project tsconfig.cjs.json",
+    "build": "tsdown",
     "pre-commit": "prettier --check . && eslint --max-warnings=0 && npm test && npm run build",
-    "release": "npx release-it --increment $(npx git-conventional-commits version)",
-    "git-conventional-commits": "^2.7.1"
+    "release": "release-it --increment $(npx git-conventional-commits version)"
   },
   "devDependencies": {
     "@release-it/keep-a-changelog": "^7.0.1",
@@ -42,6 +49,7 @@
     "git-conventional-commits": "^2.7.1",
     "prettier": "^3.8.1",
     "release-it": "^19.2.4",
+    "tsdown": "^0.21.4",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1",
