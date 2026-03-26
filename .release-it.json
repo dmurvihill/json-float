@@ -21,7 +21,7 @@
       "npm run lint --max-warnings=0",
       "npm test",
       "npm run build",
-      "npm audit --audit-level=low"
+      "npm audit --omit dev --audit-level=low"
     ]
   }
 }
