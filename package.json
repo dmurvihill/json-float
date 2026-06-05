@@ -1,6 +1,6 @@
 {
   "name": "json-float",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Represent any floating point value as JSON",
   "type": "module",
   "author": "Dolan Murvihill (https://github.com/dmurvihill)",

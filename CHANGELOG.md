@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-06-05
+
 ### Added
 
 - Supports Node 26
@@ -35,7 +37,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `CHANGELOG.md`
 - `LICENSE.txt` (MIT license)
 
-[Unreleased]: https://github.com/dmurvihill/json-float/compare/1.0.2...HEAD
+[Unreleased]: https://github.com/dmurvihill/json-float/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/dmurvihill/json-float/compare/1.0.2...1.1.0
 [1.0.2]: https://github.com/dmurvihill/json-float/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/dmurvihill/json-float/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/dmurvihill/json-float/releases/tag/1.0.0
