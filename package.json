@@ -43,7 +43,7 @@
     "release": "release-it --increment $(npx git-conventional-commits version)"
   },
   "devDependencies": {
-    "@release-it/keep-a-changelog": "^7.1.0",
+    "@release-it/keep-a-changelog": "^8.0.0",
     "@types/node": "^25.4.0",
     "eslint": "^10.0.3",
     "fast-check": "^4.6.0",
